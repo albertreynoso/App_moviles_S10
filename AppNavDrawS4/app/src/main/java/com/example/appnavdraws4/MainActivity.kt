@@ -55,9 +55,10 @@ class MainActivity : AppCompatActivity() {
 // Que chucha hace esta funcion?
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId){
-            //
+            // asignación de variables | nighmode -> variable de dia o noche | getdefaultnighmode() -> extrae si el cel esta en modo noche
             R.id.action_toggle_theme ->{
                 val nightMode = AppCompatDelegate.getDefaultNightMode()
+                //Se establece el modo noche o no
                 AppCompatDelegate.setDefaultNightMode(
                     if(nightMode == AppCompatDelegate.MODE_NIGHT_YES)
                         AppCompatDelegate.MODE_NIGHT_NO
